@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Батя VPN — скачать, купить подписку и получить ключ для подключения</title>
+  <meta name="description" content="Батя VPN для Android, ПК и Windows. Получите ключ для подключения, выберите тариф и пользуйтесь стабильным VPN без сложных настроек. Цена от 175 ₽/мес." />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, Arial, sans-serif;
+      background: #070707;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1180px, 92%);
+      margin: 0 auto;
+    }
+
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(7, 7, 7, 0.88);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 900;
+      font-size: 22px;
+      letter-spacing: -0.04em;
+    }
+
+    .logo-mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, #ff2f2f, #ff9d2f);
+      box-shadow: 0 0 30px rgba(255, 82, 47, 0.4);
+    }
+
+    .nav {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      font-size: 14px;
+      color: rgba(255,255,255,.74);
+    }
+
+    .nav a:hover {
+      color: #fff;
+    }
+
+    .menu-btn {
+      display: none;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.14);
+      color: #fff;
+      border-radius: 12px;
+      padding: 10px 14px;
+      cursor: pointer;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 24px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #ff2f2f, #ff9d2f);
+      color: #fff;
+      font-weight: 900;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 18px 46px rgba(255, 72, 47, 0.28);
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 22px 58px rgba(255, 72, 47, 0.38);
+    }
+
+    .btn-dark {
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.16);
+      box-shadow: none;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 110px 0 82px;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: -20%;
+      background:
+        radial-gradient(circle at 18% 20%, rgba(255, 47, 47, .27), transparent 32%),
+        radial-gradient(circle at 76% 28%, rgba(255, 157, 47, .22), transparent 34%),
+        radial-gradient(circle at 50% 92%, rgba(70, 92, 255, .12), transparent 30%);
+      z-index: -2;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+      background-size: 42px 42px;
+      mask-image: linear-gradient(to bottom, black, transparent 82%);
+      z-index: -1;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.08fr .92fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.12);
+      color: rgba(255,255,255,.8);
+      font-size: 14px;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-size: clamp(44px, 6.2vw, 78px);
+      line-height: .95;
+      letter-spacing: -0.07em;
+      margin-bottom: 24px;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #fff, #ffb066, #ff4242);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      max-width: 640px;
+      color: rgba(255,255,255,.76);
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+
+    .micro {
+      color: rgba(255,255,255,.56);
+      font-size: 14px;
+    }
+
+    .hero-card {
+      padding: 28px;
+      border-radius: 32px;
+      background: linear-gradient(180deg, rgba(255,255,255,.12), rgba(255,255,255,.04));
+      border: 1px solid rgba(255,255,255,.14);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.12), 0 34px 90px rgba(0,0,0,.38);
+    }
+
+    .status-card {
+      display: grid;
+      gap: 16px;
+    }
+
+    .status-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px;
+      border-radius: 18px;
+      background: rgba(0,0,0,.28);
+      border: 1px solid rgba(255,255,255,.08);
+    }
+
+    .status-row span {
+      color: rgba(255,255,255,.62);
+      font-size: 14px;
+    }
+
+    .status-row strong {
+      font-size: 15px;
+    }
+
+    .pulse {
+      display: inline-flex;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #52ff7a;
+      box-shadow: 0 0 0 8px rgba(82,255,122,.12);
+      margin-right: 8px;
+    }
+
+    section {
+      padding: 82px 0;
+    }
+
+    .section-head {
+      max-width: 800px;
+      margin-bottom: 36px;
+    }
+
+    .section-kicker {
+      color: #ff9d2f;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .09em;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: clamp(30px, 4vw, 50px);
+      line-height: 1.06;
+      letter-spacing: -0.05em;
+      margin-bottom: 16px;
+    }
+
+    .section-head p {
+      color: rgba(255,255,255,.68);
+      font-size: 18px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      padding: 26px;
+      border-radius: 26px;
+      background: rgba(255,255,255,.055);
+      border: 1px solid rgba(255,255,255,.1);
+    }
+
+    .card-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      font-size: 24px;
+      margin-bottom: 18px;
+      background: rgba(255, 87, 47, .14);
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      letter-spacing: -0.02em;
+    }
+
+    .card p,
+    .card li {
+      color: rgba(255,255,255,.68);
+    }
+
+    .steps {
+      counter-reset: step;
+      display: grid;
+      gap: 16px;
+    }
+
+    .step {
+      counter-increment: step;
+      display: grid;
+      grid-template-columns: 70px 1fr;
+      gap: 18px;
+      align-items: center;
+      padding: 22px;
+      border-radius: 24px;
+      background: rgba(255,255,255,.055);
+      border: 1px solid rgba(255,255,255,.1);
+    }
+
+    .step::before {
+      content: counter(step);
+      width: 56px;
+      height: 56px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      background: linear-gradient(135deg, #ff2f2f, #ff9d2f);
+    }
+
+    .progress-line {
+      margin-top: 22px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      color: rgba(255,255,255,.7);
+      font-weight: 900;
+    }
+
+    .progress-line span {
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.1);
+    }
+
+    .cta-box {
+      padding: 44px;
+      border-radius: 34px;
+      background:
+        radial-gradient(circle at 20% 0%, rgba(255,47,47,.22), transparent 34%),
+        linear-gradient(135deg, rgba(255,255,255,.12), rgba(255,255,255,.05));
+      border: 1px solid rgba(255,255,255,.14);
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,.72);
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .pricing-toggle {
+      display: inline-flex;
+      padding: 6px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.12);
+      margin-bottom: 28px;
+    }
+
+    .billing-btn {
+      border: none;
+      background: transparent;
+      color: rgba(255,255,255,.7);
+      padding: 12px 20px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-weight: 900;
+    }
+
+    .billing-btn.active {
+      background: linear-gradient(135deg, #ff2f2f, #ff9d2f);
+      color: #fff;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .price-card {
+      position: relative;
+      padding: 30px;
+      border-radius: 28px;
+      background: rgba(255,255,255,.055);
+      border: 1px solid rgba(255,255,255,.1);
+    }
+
+    .price-card.popular {
+      border: 1px solid rgba(255, 70, 70, .9);
+      box-shadow: 0 0 38px rgba(255, 70, 70, .22);
+    }
+
+    .price-card.maximum {
+      border: 1px solid transparent;
+      background:
+        linear-gradient(#111111, #111111) padding-box,
+        linear-gradient(135deg, #ff2f2f, #ff9d2f) border-box;
+      box-shadow: 0 0 42px rgba(255, 120, 47, .22);
+    }
+
+    .popular-label {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(255, 70, 70, .18);
+      color: #ffb0b0;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .price-icon {
+      font-size: 36px;
+      margin-bottom: 14px;
+    }
+
+    .price-card h3 {
+      font-size: 26px;
+      margin-bottom: 4px;
+    }
+
+    .price-period {
+      color: rgba(255,255,255,.62);
+      margin-bottom: 18px;
+    }
+
+    .price {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .price span {
+      font-size: 36px;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+    }
+
+    .price s {
+      color: rgba(255,255,255,.42);
+      margin-left: 8px;
+    }
+
+    .total {
+      color: rgba(255,255,255,.7);
+    }
+
+    .discount {
+      display: inline-block;
+      margin: 10px 0 18px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(82,255,122,.12);
+      color: #8dffb8;
+      font-weight: 900;
+    }
+
+    .price-card ul {
+      display: grid;
+      gap: 8px;
+      margin: 22px 0;
+      padding-left: 20px;
+      color: rgba(255,255,255,.72);
+    }
+
+    .trial-line {
+      text-align: center;
+      margin: 26px 0 34px;
+      color: rgba(255,255,255,.72);
+    }
+
+    .trial-line a {
+      color: #ffb066;
+      font-weight: 900;
+    }
+
+    .calculator {
+      padding: 34px;
+      border-radius: 30px;
+      background: rgba(255,255,255,.055);
+      border: 1px solid rgba(255,255,255,.12);
+    }
+
+    .calculator h3 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .calculator p {
+      color: rgba(255,255,255,.68);
+      margin-bottom: 24px;
+    }
+
+    .calc-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-bottom: 22px;
+    }
+
+    .calc-grid label {
+      display: grid;
+      gap: 10px;
+      padding: 18px;
+      border-radius: 20px;
+      background: rgba(0,0,0,.22);
+      border: 1px solid rgba(255,255,255,.08);
+      color: rgba(255,255,255,.72);
+    }
+
+    .calc-grid input,
+    .calc-grid select {
+      width: 100%;
+      padding: 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: #0b0b0f;
+      color: #fff;
+    }
+
+    .calc-result {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    .calc-result div {
+      padding: 18px;
+      border-radius: 20px;
+      background: rgba(0,0,0,.22);
+      border: 1px solid rgba(255,255,255,.08);
+    }
+
+    .calc-result span {
+      display: block;
+      color: rgba(255,255,255,.56);
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+
+    .calc-result strong {
+      font-size: 24px;
+    }
+
+    .reviews {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .review {
+      padding: 24px;
+      border-radius: 24px;
+      background: rgba(255,255,255,.055);
+      border: 1px solid rgba(255,255,255,.1);
+    }
+
+    .stars {
+      color: #ffd36a;
+      margin-bottom: 10px;
+    }
+
+    .review strong {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .review p {
+      color: rgba(255,255,255,.72);
+    }
+
+    .text-block {
+      display: grid;
+      gap: 28px;
+    }
+
+    .text-block article {
+      padding: 30px;
+      border-radius: 28px;
+      background: rgba(255,255,255,.045);
+      border: 1px solid rgba(255,255,255,.09);
+    }
+
+    .text-block h3 {
+      font-size: 26px;
+      margin-bottom: 14px;
+      letter-spacing: -0.03em;
+    }
+
+    .text-block p {
+      color: rgba(255,255,255,.7);
+      margin-bottom: 10px;
+    }
+
+    .faq {
+      display: grid;
+      gap: 14px;
+    }
+
+    .faq-item {
+      border-radius: 22px;
+      background: rgba(255,255,255,.055);
+      border: 1px solid rgba(255,255,255,.1);
+      overflow: hidden;
+    }
+
+    .faq-question {
+      width: 100%;
+      background: transparent;
+      border: none;
+      color: #fff;
+      padding: 22px;
+      font-size: 18px;
+      font-weight: 900;
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 0 22px 22px;
+      color: rgba(255,255,255,.7);
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .footer {
+      padding: 34px 0;
+      border-top: 1px solid rgba(255,255,255,.08);
+      color: rgba(255,255,255,.54);
+      font-size: 14px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .confetti {
+      position: fixed;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9999;
+      animation: confettiFall 900ms ease-out forwards;
+    }
+
+    @keyframes confettiFall {
+      from {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      to {
+        transform: translateY(120px) scale(.2);
+        opacity: 0;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid,
+      .cards,
+      .pricing-grid,
+      .calc-grid,
+      .calc-result,
+      .reviews,
+      .cta-box {
+        grid-template-columns: 1fr;
+      }
+
+      .nav {
+        position: absolute;
+        top: 72px;
+        left: 4%;
+        right: 4%;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 18px;
+        border-radius: 20px;
+        background: #111;
+        border: 1px solid rgba(255,255,255,.12);
+      }
+
+      .nav.active {
+        display: flex;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .hero {
+        padding-top: 74px;
+      }
+
+      .cta-box {
+        padding: 30px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      h1 {
+        font-size: 42px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .step {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<header class="header">
+  <div class="container header-inner">
+    <a href="#hero" class="logo">
+      <span class="logo-mark">🛡</span>
+      <span>Батя VPN</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#pain">Проблема</a>
+      <a href="#advantages">Преимущества</a>
+      <a href="#how">Как работает</a>
+      <a href="#devices">Устройства</a>
+      <a href="#pricing">Тарифы</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn">Меню</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="badge">Батя VPN · ключ для подключения</div>
+        <h1><span class="gradient-text">Батя VPN</span> — подключил и забыл</h1>
+        <p>
+          Нормальный VPN без плясок с настройками. Получаешь ключ,
+          подключаешь на телефон или компьютер — и пользуешься спокойно.
+        </p>
+
+        <div class="hero-actions">
+          <a href="https://tuvp1.ru/5Sg5nF?sub1=baatya-vpn" class="btn">Получить ключ</a>
+          <a href="#pricing" class="btn btn-dark">Смотреть тарифы</a>
+        </div>
+
+        <div class="micro">
+          Работает на Android, Windows, iPhone, macOS и других устройствах.
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="status-card">
+          <div class="status-row">
+            <span>Ключ</span>
+            <strong><i class="pulse"></i>Активен</strong>
+          </div>
+          <div class="status-row">
+            <span>Устройства</span>
+            <strong>До нескольких</strong>
+          </div>
+          <div class="status-row">
+            <span>Настройка</span>
+            <strong>2–5 минут</strong>
+          </div>
+          <div class="status-row">
+            <span>Поддержка</span>
+            <strong>На связи</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pain">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-kicker">Знакомая история</div>
+        <h2>Когда интернет опять решил повыпендриваться</h2>
+        <p>
+          Открываешь сайт — не грузится. Приложение тупит. Рабочий сервис
+          внезапно недоступен. И ты сидишь, как будто это твоя вина.
+        </p>
+      </div>
+
+      <div class="cards">
+        <div class="card"><div class="card-icon">🧱</div><h3>Сайты не открываются</h3><p>Вчера работало, сегодня делает вид, что тебя не знает.</p></div>
+        <div class="card"><div class="card-icon">🐢</div><h3>Приложения тупят</h3><p>Загрузка крутится, нервы заканчиваются.</p></div>
+        <div class="card"><div class="card-icon">💥</div><h3>VPN слетает</h3><p>Каждые 10 минут нужно что-то перезапускать.</p></div>
+        <div class="card"><div class="card-icon">🤯</div><h3>Настройки непонятные</h3><p>Как будто ты не VPN ставишь, а спутник запускаешь.</p></div>
+        <div class="card"><div class="card-icon">🔑</div><h3>Нужен ключ</h3><p>А где его взять и куда вставить — никто нормально не объяснил.</p></div>
+        <div class="card"><div class="card-icon">👌</div><h3>Хочется просто пользоваться</h3><p>Нажал, подключил, забыл. Вот и весь план.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="advantages">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-kicker">Почему он</div>
+        <h2>Почему Батя VPN нормальный вариант</h2>
+        <p>
+          Батя VPN нужен как раз для таких моментов. Без сложных слов,
+          без ручной возни и без ощущения, что ты чинить сервер NASA собрался.
+        </p>
+      </div>
+
+      <div class="cards">
+        <div class="card"><div class="card-icon">🔑</div><h3>Получаешь ключ</h3><p>Без долгих квестов и странных инструкций.</p></div>
+        <div class="card"><div class="card-icon">📱</div><h3>Для ПК и телефона</h3><p>Можно подключить Батя VPN на ПК, Android и другие устройства.</p></div>
+        <div class="card"><div class="card-icon">🤖</div><h3>Android</h3><p>Можно скачать Батя VPN на Android и подключиться по инструкции.</p></div>
+        <div class="card"><div class="card-icon">🪟</div><h3>Windows</h3><p>Батя VPN для Виндовс, ноутбука и домашнего компьютера.</p></div>
+        <div class="card"><div class="card-icon">📘</div><h3>Понятная инструкция</h3><p>Без умных слов, которые никто не просил.</p></div>
+        <div class="card"><div class="card-icon">💬</div><h3>Поддержка</h3><p>Если что-то пошло не так — помогут разобраться.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-kicker">Как работает</div>
+        <h2>Три шага — и ты в деле</h2>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div>
+            <h3>Жмёшь «Получить ключ»</h3>
+            <p>Переходишь к покупке подписки Батя VPN.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div>
+            <h3>Выбираешь тариф</h3>
+            <p>Получаешь ключ для подключения VPN Батя.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div>
+            <h3>Подключаешь устройство</h3>
+            <p>Телефон, ПК или ноутбук — по инструкции.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div>
+            <h3>Пользуешься</h3>
+            <p>Всё. Без героизма.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="progress-line">
+        <span>1. Ключ</span>
+        <span>2. Тариф</span>
+        <span>3. Подключение</span>
+        <span>Готово</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="devices">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-kicker">Устройства</div>
+        <h2>Куда можно поставить Батя VPN</h2>
+        <p>Телефон, компьютер, ноутбук — без разницы. Главное, чтобы интернет был.</p>
+      </div>
+
+      <div class="cards">
+        <div class="card"><div class="card-icon">📱</div><h3>Android</h3><p>Скачать Батя VPN на Android и подключиться по инструкции.</p></div>
+        <div class="card"><div class="card-icon">🖥</div><h3>Windows</h3><p>Батя VPN для Виндовс, ПК и ноутбука.</p></div>
+        <div class="card"><div class="card-icon">💻</div><h3>Компьютер</h3><p>Подключение на домашний ПК или рабочий ноутбук.</p></div>
+        <div class="card"><div class="card-icon">🍏</div><h3>iPhone / macOS</h3><p>Подключение по понятной инструкции.</p></div>
+        <div class="card"><div class="card-icon">🌐</div><h3>Другие устройства</h3><p>Если поддерживают VPN-профили — можно подключить.</p></div>
+        <div class="card"><div class="card-icon">🔐</div><h3>Один ключ</h3><p>Для удобного подключения на ваших устройствах.</p></div>
+      </div>
+
+      <br />
+      <a href="https://tuvp1.ru/5Sg5nF?sub1=baatya-vpn" class="btn">Подключить устройство</a>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-kicker">Тарифы</div>
+        <h2>Выбери свой тариф</h2>
+        <p>Один ключ — все ваши устройства. Цены без сюрпризов.</p>
+      </div>
+
+      <div class="pricing-toggle">
+        <button class="billing-btn active" data-billing="monthly">Помесячно</button>
+        <button class="billing-btn" data-billing="yearly">Ежегодно −50%</button>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="price-card">
+          <div class="price-icon">📱</div>
+          <h3>Старт</h3>
+          <p class="price-period">1 месяц</p>
+          <div class="price"><span>349 ₽</span>/мес</div>
+          <ul>
+            <li>Все платформы</li>
+            <li>Безлимит</li>
+            <li>Поддержка</li>
+          </ul>
+          <a href="https://tuvp1.ru/5Sg5nF?sub1=baatya-vpn" class="btn">Начать</a>
+        </div>
+
+        <div class="price-card popular">
+          <div class="popular-label">⭐ Популярный</div>
+          <div class="price-icon">📲</div>
+          <h3>Оптимальный</h3>
+          <p class="price-period">3 месяца</p>
+          <div class="price"><span>260 ₽</span>/мес <s>349 ₽</s></div>
+          <p class="total">Итого: 780 ₽ за квартал</p>
+          <p class="discount">Скидка −25%</p>
+          <ul>
+            <li>Все платформы</li>
+            <li>Безлимит</li>
+            <li>Поддержка</li>
+          </ul>
+          <a href="https://tuvp1.ru/5Sg5nF?sub1=baatya-vpn" class="btn">Выбрать</a>
+        </div>
+
+        <div class="price-card maximum">
+          <div class="price-icon">🚀</div>
+          <h3>Максимум</h3>
+          <p class="price-period">1 год</p>
+          <div class="price"><span>175 ₽</span>/мес <s>349 ₽</s></div>
+          <p class="total">Итого: 2 100 ₽ за год</p>
+          <p class="discount">Скидка −50%</p>
+          <ul>
+            <li>Все платформы</li>
+            <li>Безлимит</li>
+            <li>Поддержка</li>
+          </ul>
+          <a href="https://tuvp1.ru/5Sg5nF?sub1=baatya-vpn" class="btn confetti-btn">Взять на год</a>
+        </div>
+      </div>
+
+      <div class="trial-line">
+        Хочешь сначала проверить?
+        <a href="https://tuvp1.ru/5Sg5nF?sub1=baatya-vpn">Пробный за 10 ₽ →</a>
+      </div>
+
+      <div class="calculator">
+        <h3>Посчитай, сколько выйдет</h3>
+        <p>Без бухгалтерии и боли. Просто двигаешь ползунок — видишь сумму.</p>
+
+        <div class="calc-grid">
+          <label>
+            Количество устройств
+            <input type="range" id="devicesRange" min="1" max="10" value="3">
+            <strong><span id="devicesCount">3</span> устройства</strong>
+          </label>
+
+          <label>
+            Срок подключения
+            <select id="planSelect">
+              <option value="349|1">1 месяц — 349 ₽/мес</option>
+              <option value="260|3">3 месяца — 260 ₽/мес</option>
+              <option value="175|12">1 год — 175 ₽/мес</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="calc-result">
+          <div><span>Итого к оплате</span><strong id="calcTotal">780 ₽</strong></div>
+          <div><span>Экономия</span><strong id="calcSaving">267 ₽</strong></div>
+          <div><span>Цена за устройство</span><strong id="calcPerDevice">87 ₽/мес</strong></div>
+        </div>
+
+        <a href="https://tuvp1.ru/5Sg5nF?sub1=baatya-vpn" class="btn">Подключить тариф</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-kicker">Отзывы</div>
+        <h2>Что говорят те, кто уже подключил</h2>
+      </div>
+
+      <div class="reviews">
+        <div class="review"><div class="stars">★★★★★</div><strong>Илья, Москва</strong><p>«Нужен был Батя VPN на ПК. Получил ключ, поставил по инструкции, всё завелось. Без цирка.»</p></div>
+        <div class="review"><div class="stars">★★★★★</div><strong>Настя, Казань</strong><p>«Скачала Батя VPN на Android, думала будет сложно. А там всё понятно. Подключилась минут за пять.»</p></div>
+        <div class="review"><div class="stars">★★★★★</div><strong>Сергей, Краснодар</strong><p>«Искал, сколько стоит ВПН Батя. Взял на 3 месяца, норм цена. Работает стабильно.»</p></div>
+        <div class="review"><div class="stars">★★★★★</div><strong>Олег, Санкт-Петербург</strong><p>«VPN раньше постоянно отваливался. Тут подключил ключ и забыл. Вот так и должно быть.»</p></div>
+        <div class="review"><div class="stars">★★★★★</div><strong>Марина, Екатеринбург</strong><p>«Понравилось, что не надо разбираться в куче настроек. Поддержка помогла, теперь пользуюсь на телефоне и ноутбуке.»</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="account">
+    <div class="container">
+      <div class="cta-box">
+        <div>
+          <h2>Ключ получил — дальше всё просто</h2>
+          <p>
+            После покупки ты получаешь ключ для ВПН Батя и инструкцию по подключению.
+            В личном кабинете можно посмотреть данные, продлить подписку и быстро
+            вернуться к настройкам.
+          </p>
+        </div>
+        <a href="https://tuvp1.ru/5Sg5nF?sub1=baatya-vpn" class="btn">Получить ключ</a>
+      </div>
+    </div>
+  </section>
+
+ <section id="seo-text">
+  <div class="container">
+    <div class="text-block">
+      <article>
+        <h3>Когда интернет начинает решать за тебя</h3>
+        <p>
+          Открываешь нужный сайт — заблокирован. Пробуешь приложение — не работает.
+          Хочешь посмотреть что-то привычное — а там белый экран или сообщение,
+          что контент недоступен. И никто особо не объясняет почему.
+        </p>
+        <p>
+          Просто в какой-то момент привычные вещи перестают работать, и ты начинаешь
+          подстраиваться под это как под норму.
+        </p>
+        <p>
+          Рабочие инструменты, мессенджеры, сервисы, которыми пользуешься каждый день —
+          под ограничения попадает всё подряд, и список только растёт. Ждать,
+          что само рассосётся, уже не получается.
+        </p>
+      </article>
+
+      <article>
+        <h3>Надёжно, без лишних заморочек</h3>
+        <p>
+          Сервис работает на основе белых списков: сам определяет, какой трафик
+          пустить через защищённый канал, а какой и так нормально идёт.
+        </p>
+        <p>
+          Это значит, что скорость не падает там, где не нужно, телефон не садится
+          быстрее обычного, и ничего не надо настраивать руками каждый раз заново.
+        </p>
+        <p>
+          Никакой возни с настройками, никаких «почему опять не работает».
+          Включил — и всё просто открывается. Именно так и должно быть,
+          без лишних объяснений и инструкций на полчаса.
+        </p>
+      </article>
+
+      <article>
+        <h3>Попробуй бесплатно — убедись сам</h3>
+        <p>
+          Никаких обязательств и длинных регистраций. Скачиваешь, включаешь и смотришь,
+          как всё то, что перестало открываться, снова работает как надо.
+        </p>
+        <p>
+          Если не понравится — никто не держит, всё честно.
+        </p>
+        <p>
+          Но скорее всего, уже через пару минут станет понятно, что так и должен
+          работать нормальный интернет. Иногда лучше один раз попробовать,
+          чем долго читать про это.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+  <section id="faq">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-kicker">FAQ</div>
+        <h2>Частые вопросы</h2>
+      </div>
+
+      <div class="faq">
+        <div class="faq-item active">
+          <button class="faq-question">Где скачать Батя VPN? <span>+</span></button>
+          <div class="faq-answer">
+            Перейдите по кнопке на сайте, выберите тариф и получите инструкцию.
+            Можно подключить Батя VPN на Android, ПК, Windows и другие устройства.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Сколько стоит Батя VPN? <span>+</span></button>
+          <div class="faq-answer">
+            Есть три тарифа: 1 месяц — 349 ₽, 3 месяца — 780 ₽,
+            1 год — 2 100 ₽. Чем дольше срок, тем ниже цена за месяц.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Как получить ключ для ВПН Батя? <span>+</span></button>
+          <div class="faq-answer">
+            Нажмите «Получить ключ», выберите тариф и оплатите подписку.
+            После этого получите ключ для подключения и инструкцию.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Можно ли использовать Батя VPN на ПК? <span>+</span></button>
+          <div class="faq-answer">
+            Да. Батя VPN можно использовать на ПК, ноутбуке и компьютере с Windows.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Есть ли Батя VPN на Android? <span>+</span></button>
+          <div class="faq-answer">
+            Да, можно скачать приложение Батя VPN на Android или подключиться
+            по инструкции, если используется VPN-профиль.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Где официальный сайт Батя VPN? <span>+</span></button>
+          <div class="faq-answer">
+            Этот лендинг позиционируется как сайт Батя VPN с кнопками для покупки
+            подписки, получения ключа и перехода к подключению.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Что делать, если не получается подключиться? <span>+</span></button>
+          <div class="faq-answer">
+            Напишите в поддержку. Поможем разобраться с установкой, ключом
+            и настройкой на вашем устройстве.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>© 2025 Батя VPN. Всё по-человечески.</span>
+    <span>Ключ для подключения ВПН Батя</span>
+  </div>
+</footer>
+
+<script>
+  const CTA_LINK = 'https://tuvp1.ru/5Sg5nF?sub1=baatya-vpn';
+
+  const menuBtn = document.getElementById('menuBtn');
+  const nav = document.getElementById('nav');
+
+  menuBtn.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+
+  document.querySelectorAll('.nav a').forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('active');
+    });
+  });
+
+  document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+      button.parentElement.classList.toggle('active');
+    });
+  });
+
+  const billingButtons = document.querySelectorAll('.billing-btn');
+  const planSelect = document.getElementById('planSelect');
+  const devicesRange = document.getElementById('devicesRange');
+  const devicesCount = document.getElementById('devicesCount');
+  const calcTotal = document.getElementById('calcTotal');
+  const calcSaving = document.getElementById('calcSaving');
+  const calcPerDevice = document.getElementById('calcPerDevice');
+
+  function updateCalculator() {
+    const devices = Number(devicesRange.value);
+    const [monthlyPrice, months] = planSelect.value.split('|').map(Number);
+
+    const baseMonthly = 349;
+    const total = monthlyPrice * months;
+    const baseTotal = baseMonthly * months;
+    const saving = baseTotal - total;
+    const perDevice = Math.round(monthlyPrice / devices);
+
+    devicesCount.textContent = devices;
+    calcTotal.textContent = total.toLocaleString('ru-RU') + ' ₽';
+    calcSaving.textContent = saving.toLocaleString('ru-RU') + ' ₽';
+    calcPerDevice.textContent = perDevice.toLocaleString('ru-RU') + ' ₽/мес';
+  }
+
+  devicesRange.addEventListener('input', updateCalculator);
+  planSelect.addEventListener('change', updateCalculator);
+
+  billingButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      billingButtons.forEach(item => item.classList.remove('active'));
+      btn.classList.add('active');
+
+      if (btn.dataset.billing === 'yearly') {
+        planSelect.value = '175|12';
+      } else {
+        planSelect.value = '349|1';
+      }
+
+      updateCalculator();
+    });
+  });
+
+  document.querySelectorAll('.confetti-btn').forEach(btn => {
+    btn.addEventListener('click', e => {
+      for (let i = 0; i < 26; i++) {
+        const dot = document.createElement('span');
+        dot.className = 'confetti';
+        dot.style.left = `${e.clientX + (Math.random() * 130 - 65)}px`;
+        dot.style.top = `${e.clientY + (Math.random() * 46 - 23)}px`;
+        dot.style.background = ['#ff2f2f', '#ff9d2f', '#ffd36a', '#ffffff'][Math.floor(Math.random() * 4)];
+        document.body.appendChild(dot);
+        setTimeout(() => dot.remove(), 900);
+      }
+    });
+  });
+
+  updateCalculator();
+</script>
+</body>
+</html>
